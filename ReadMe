@@ -1,3 +1,8 @@
 Problem 1:
 My program runs by dedicating 1 thread at a time to adding elements to the concurrent linked list while the other three wait either for the semaphore to free up. After they add an element to the list, if the list is not empty, they then remove one element and write a thank you note.
 It takes user input from the keyboard to run and runs on Java. It is likely not the best way to do the problem but it works which is the most important thing.
+
+Problem 2:
+My program does not require any input from the user and runs using java. It simulates one hour of our rover sensing temperatures on Mars by generating random temperatures. Each thread takes a temperature for a time and then checks how that temperature changes the final information.
+The highest and lowest temperatures are kept in synchronized list so the prgram is thread safe. The program prints its runtime at the end in seconds.
+The highest and lowest list are sorted so adding a new temperature is always O(n) and removing is O(1). The program cannot run to fast though as then the program experiences index out of bound errors.
